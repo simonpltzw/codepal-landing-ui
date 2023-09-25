@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "CodePal",
   version: "v0.1.2",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Explore my portfolio showcasing a collection of inspiring projects that bring ideas to life.",
   mainNav: [
     // {
     //   title: "Home",
