@@ -11,6 +11,8 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import { StringCompareApiProject } from "@/components/projects-stringcompare-api"
+import { LandingCodepalUiProject } from "@/components/projects-landing-codepal-ui"
 
 export default function IndexPage() {
     return (
@@ -48,18 +50,21 @@ export default function IndexPage() {
                 </div>
             </div>
 
-            <h2 className="text-2xl font-extrabold md:text-3xl">
-                My Projects
-            </h2>
+            <h2 className="text-2xl font-extrabold md:text-3xl">Projects</h2>
 
 
-            <Alert>
+            {/* <Alert>
                 <Icons.rocket className="h-4 w-4" />
                 <AlertTitle>Please be patient</AlertTitle>
                 <AlertDescription>
                     New inspiring projects will be arriving soon.
                 </AlertDescription>
-            </Alert>
+            </Alert> */}
+
+            <div className="flex flex-col gap-10">
+                <LandingCodepalUiProject/>
+                <StringCompareApiProject/>
+            </div>
 
             {/* For drawer see https://github.com/emilkowalski/vaul */}
         </section>
