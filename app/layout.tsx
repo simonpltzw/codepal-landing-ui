@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import Link from "next/link"
+import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
   title: {
@@ -46,9 +47,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <SiteHeader />
               <div className="flex-1">{children}</div>
               <hr/>
-              <div className="flex flex-row justify-between text-muted-foreground p-5">
-                <p>©2023 Built by <Link href={siteConfig.links.github} className="underline">simonpltzw</Link></p>
-                <p>{siteConfig.version}</p>
+              <div className="flex flex-row justify-between text-muted-foreground container py-5">
+                <p>©2023 Built by <Link href={siteConfig.links.github} target="_blank" rel="norefferer" className="underline">simonpltzw</Link></p>
+                <Badge variant="outline">{siteConfig.version}</Badge>
               </div>
             </div>
             <TailwindIndicator />
