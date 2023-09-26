@@ -52,18 +52,17 @@ export default function IndexPage() {
 
             <h2 className="text-2xl font-extrabold md:text-3xl">Projects</h2>
 
-
-            {/* <Alert>
-                <Icons.rocket className="h-4 w-4" />
-                <AlertTitle>Please be patient</AlertTitle>
-                <AlertDescription>
-                    New inspiring projects will be arriving soon.
-                </AlertDescription>
-            </Alert> */}
-
             <div className="flex flex-col gap-10">
                 <LandingCodepalUiProject/>
                 <StringCompareApiProject/>
+
+                <Alert>
+                    <Icons.rocket className="h-4 w-4" />
+                    <AlertTitle>More is soon to come!</AlertTitle>
+                    <AlertDescription>
+                        New inspiring projects will be arriving soon.
+                    </AlertDescription>
+                </Alert>
             </div>
 
             {/* For drawer see https://github.com/emilkowalski/vaul */}
