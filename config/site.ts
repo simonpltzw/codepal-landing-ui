@@ -3,9 +3,9 @@ export type SiteConfig = typeof siteConfig
 export const siteConfig = {
   name: "palzone.de",
   domain: "palzone.de",
-  version: "v0.2.0",
-  description:
-    "Explore my portfolio showcasing a collection of inspiring projects that bring ideas to life.",
+  version: "v0.2.4",
+  description: "Explore my portfolio showcasing a collection of inspiring projects that bring ideas to life.",
+  mail: "info@palzone.de",
   mainNav: [
     // {
     //   title: "Home",
@@ -21,7 +21,7 @@ export const siteConfig = {
     lucide: "https://lucide.dev/",
     unDraw: "https://undraw.co/",
     project_ffischbach_events_website: "https://ffischbach-events.palzone.de",
-    project_ffischbach_events_api: "https://ffischbach-events-api.palzone.de",
+    project_ffischbach_events_api: "https://ffischbach-events-api.palzone.de/swagger",
     project_stringcompare_api: "https://api.stringcompare.codepal.online/swagger/index.html",
     github_project_ffischbach_events: "https://github.com/simonpltzw/ffischbach-events",
     github_project_stringcompare_api: "https://github.com/simonpltzw/stringcompare-api",

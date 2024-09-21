@@ -27,7 +27,7 @@ export function StringCompareApiProject() {
                     </div>
                     <p>Diese WebAPI stellt Endpunkte bereit, mit denen sich Texte vergleichen lassen.</p>
                     <p>
-                        Grund für die Entwicklung war die Abhängigkeit zu kostenfreien Online-Strinngvergleichs-Tools. Mit einem eigenen Tool kann sichergestellt werden, dass sensible Daten nicht bei Drittanbietern landen.
+                        Grund für die Entwicklung war die Abhängigkeit zu kostenfreien Online-Stringvergleichs-Tools. Mit einem eigenen Tool kann sichergestellt werden, dass sensible Daten nicht bei Drittanbietern landen.
                         <br/>
                         Die API verwendet als Framework Microsoft.AspNetCore auf der dotnet 6 Runtime.
                     </p>

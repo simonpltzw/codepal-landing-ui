@@ -40,6 +40,13 @@ export default function IndexPage() {
                             <Icons.gitHub/>
                             <p className="ms-2">GitHub</p>
                         </Link>
+
+                        <Link
+                            href={ "mailto:" + siteConfig.mail }
+                            className={cn(buttonVariants({ variant: "outline", size: "icon" }), "mt-4", "ml-2")}
+                            >
+                            <Icons.mail/>
+                        </Link>
                     </div>
                 </div>
 

@@ -9,6 +9,7 @@ import {
   Search,
   Rocket,
   X,
+  Mail,
 } from "lucide-react"
 
 export type Icon = LucideIcon
@@ -67,5 +68,6 @@ export const Icons = {
   externalLink: ExternalLink,
   search: Search,
   rocket: Rocket,
-  x: X
+  x: X,
+  mail: Mail
 }

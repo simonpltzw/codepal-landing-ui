@@ -1,4 +1,4 @@
-FROM node:16-alpine AS base
+FROM node:18-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -56,9 +56,9 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 3000
+EXPOSE 50010
 
-ENV PORT 3000
+ENV PORT 50010
 # set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
 
