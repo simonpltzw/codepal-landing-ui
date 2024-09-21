@@ -13,14 +13,14 @@ import Link from "next/link"
 
 export default function AboutPage() {
     return (
-        <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+        <section className="container grid items-center gap-6 pb-8 py-6 md:py-10">
             <h1 className="text-3xl font-extrabold md:text-4xl">
-                About CodePal Dashboard
+                Über die {siteConfig.name} Portfolio-Seite
             </h1>
 
-            <p className="text-lg">This App serves as a Launchpad for different projects on the <Link href="codepal.online" className="underline">codepal.online</Link> domain.</p>
+            <p>Diese Anwendung dient als Launchpad für verschiedene Projekte auf der <Link href="/" className="underline">{siteConfig.domain}</Link> domain.</p>
 
-            <p>The Website is running on <span className="font-bold" translate="no">React</span> using the <span className="font-bold">shadcn-ui</span> framework and <span className="font-bold">Lucide</span> Icons.</p>
+            <p>Die folgenden Bibliotheken wurden für die Erstellung der Seite verwendet:</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <Card>

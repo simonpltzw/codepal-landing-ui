@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { StringCompareApiProject } from "@/components/projects-stringcompare-api"
 import { LandingCodepalUiProject } from "@/components/projects-landing-codepal-ui"
+import { FFischbachEventsProject } from "@/components/projects-ffischbach-events"
 
 export default function IndexPage() {
     return (
@@ -22,13 +23,12 @@ export default function IndexPage() {
                 <div className="flex">
                     <div className="my-auto">
                         <h1 className="text-3xl font-extrabold md:text-4xl mb-5">
-                            Welcome to CodePal
+                            Willkommen auf <span className="text-primary">{siteConfig.domain}</span>
                         </h1>
 
-                        <h4 className="text-lg font-bold mb-3">Step into a realm of creativity and innovation!</h4>
+                        <h4 className="text-lg font-bold mb-3">Private Projekte und kreative Lösungen.</h4>
                         <p>
-                            {/* Explore my portfolio of groundbreaking projects, where ideas take shape. Navigate through a range of creative solutions and embark on a path of exploration. */}
-                            Explore my portfolio showcasing a collection of inspiring projects that bring ideas to life. From behind-the-scenes magic to digital delights, get ready to embark on a visual journey through the power of code.
+                            Hier werden private Projekte in den Bereichen Technologie, Design und Innovation verwirklicht. Die Plattform dient als Entwicklungsraum für Experimente, Prototypen und spannende neue Ansätze, die aus Leidenschaft für Fortschritt und Kreativität entstehen.
                         </p>
 
                         <Link
@@ -38,7 +38,7 @@ export default function IndexPage() {
                             className={cn(buttonVariants({ variant: "default" }), "mt-4")}
                             >
                             <Icons.gitHub/>
-                            <p className="ms-2">Visit me on GitHub</p>
+                            <p className="ms-2">GitHub</p>
                         </Link>
                     </div>
                 </div>
@@ -50,17 +50,20 @@ export default function IndexPage() {
                 </div>
             </div>
 
-            <h2 className="text-2xl font-extrabold md:text-3xl">Projects</h2>
+            <hr/>
+
+            <h2 className="text-2xl font-extrabold md:text-3xl my-10">Projekte</h2>
 
             <div className="flex flex-col gap-10">
+                <FFischbachEventsProject/>
                 <LandingCodepalUiProject/>
                 <StringCompareApiProject/>
 
                 <Alert>
                     <Icons.rocket className="h-4 w-4" />
-                    <AlertTitle>More is soon to come!</AlertTitle>
+                    <AlertTitle>Mehr ist auf dem Weg!</AlertTitle>
                     <AlertDescription>
-                        New inspiring projects will be arriving soon.
+                        Neue innovative Projekte werden bald veröffentlicht.
                     </AlertDescription>
                 </Alert>
             </div>

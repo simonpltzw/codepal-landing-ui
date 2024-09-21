@@ -7,12 +7,13 @@ import { Icons } from "@/components/icons"
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { buttonVariants } from "./ui/button";
+import { Badge } from "./ui/badge";
 
 export function LandingCodepalUiProject() {
     return (
         <Card>
             <CardContent className="grid grid-cols-1 sm:grid-cols-5 p-0" style={{minHeight: 250}}>
-                <div className="bg-sky-800 text-white col-span-1 sm:col-span-2 h-full p-10 rounded-tl-lg rounded-tr-lg rounded-bl-none sm:rounded-tr-none sm:rounded-bl-lg flex justify-center items-center">
+                <div className="bg-sky-950 text-white col-span-1 sm:col-span-2 h-full p-10 rounded-tl-lg rounded-tr-lg rounded-bl-none sm:rounded-tr-none sm:rounded-bl-lg flex justify-center items-center">
                     <div className="flex items-center">
                         <Icons.react className="h-10 w-10"/>
                         <Icons.x className="mx-4"/>
@@ -21,8 +22,11 @@ export function LandingCodepalUiProject() {
                 </div>
                 <div className="col-span-1 sm:col-span-3 h-full p-10 flex flex-col gap-4">
                     <h2 className="text-2xl font-bold">Landing UI</h2>
-                    <p>The landing page you are currently on.</p>
-                    <p>The page is written in typescript using React and the shadcn-ui component library. It was initially started due to a lack of knowledge in the React library and the discovery of shadcn.</p>
+                    <div>
+                        <Badge className="bg-green-600">live</Badge>
+                    </div>
+                    <p>Die Seite auf der du dich momentan befindest.</p>
+                    <p>Sie ist ein erster Versuch der Entwicklung von Websites mit React, sowie next.js und shadcn-ui. Ziel des Projekts war die Bereitstellung einer Landing Page, sowie das Erlernen der verschiedenen Frameworks.</p>
                     <div className="flex flex-wrap gap-3">
                         <Link
                             target="_blank"
