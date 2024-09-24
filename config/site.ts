@@ -24,6 +24,7 @@ export const siteConfig = {
     project_ffischbach_events_api: "https://ffischbach-events-api.palzone.de/swagger",
     project_stringcompare_api: "https://api.stringcompare.codepal.online/swagger/index.html",
     github_project_ffischbach_events: "https://github.com/simonpltzw/ffischbach-events",
+    github_project_ffischbach_events_rust: "https://github.com/simonpltzw/ffischbach-events-api-rs",
     github_project_stringcompare_api: "https://github.com/simonpltzw/stringcompare-api",
     github_project_landing_ui: "https://github.com/simonpltzw/codepal-landing-ui"
   },

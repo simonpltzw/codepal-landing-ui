@@ -14,6 +14,7 @@ import Image from "next/image"
 import { StringCompareApiProject } from "@/components/projects-stringcompare-api"
 import { LandingCodepalUiProject } from "@/components/projects-landing-codepal-ui"
 import { FFischbachEventsProject } from "@/components/projects-ffischbach-events"
+import { FischbachEventsRustProject } from "@/components/projects-ffischbach-events-rust"
 
 export default function IndexPage() {
     return (
@@ -62,6 +63,7 @@ export default function IndexPage() {
             <h2 className="text-2xl font-extrabold md:text-3xl my-10">Projekte</h2>
 
             <div className="flex flex-col gap-10">
+                <FischbachEventsRustProject/>
                 <FFischbachEventsProject/>
                 <LandingCodepalUiProject/>
                 <StringCompareApiProject/>
