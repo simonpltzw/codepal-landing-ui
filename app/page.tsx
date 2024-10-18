@@ -63,8 +63,8 @@ export default function IndexPage() {
             <h2 className="text-2xl font-extrabold md:text-3xl my-10">Projekte</h2>
 
             <div className="flex flex-col gap-10">
-                <FischbachEventsRustProject/>
                 <FFischbachEventsProject/>
+                <FischbachEventsRustProject/>
                 <LandingCodepalUiProject/>
                 <StringCompareApiProject/>
 
