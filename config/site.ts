@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig
 export const siteConfig = {
   name: "palzone.de",
   domain: "palzone.de",
-  version: "v0.2.4",
+  version: "v0.2.5",
   description: "Explore my portfolio showcasing a collection of inspiring projects that bring ideas to life.",
   mail: "info@palzone.de",
   mainNav: [
