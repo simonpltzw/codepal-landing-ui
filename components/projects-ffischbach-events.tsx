@@ -13,7 +13,7 @@ export function FFischbachEventsProject() {
     return (
         <Card>
             <CardContent className="grid grid-cols-1 sm:grid-cols-5 p-0" style={{minHeight: 250}}>
-                <div className="bg-rose-950 text-white col-span-1 sm:col-span-2 h-full p-10 rounded-tl-lg rounded-tr-lg rounded-br-none sm:rounded-tl-none sm:rounded-br-lg flex justify-center items-center">
+                <div className="bg-rose-950 text-white col-span-1 sm:col-span-2 h-full p-10 rounded-tl-lg rounded-tr-lg rounded-br-none sm:rounded-tr-none sm:rounded-bl-lg flex justify-center items-center">
                     <div className="flex items-center">
                         <Icons.next className="w-20"/>
                         <Icons.x className="mx-4"/>
@@ -23,7 +23,7 @@ export function FFischbachEventsProject() {
                 <div className="col-span-1 sm:col-span-3 h-full p-10 flex flex-col gap-4">
                     <h2 className="text-2xl font-bold">Event-Management Freiwillige Feuerwehr Fischbach</h2>
                     <div>
-                        <Badge className="bg-blue-500">in progress</Badge>
+                        <Badge className="bg-green-600">live</Badge>
                     </div>
                     <p>Diese Anwendung besteht aus drei Komponenten: Einem Formular, eingebettet auf der offiziellen Website der Feuerwehr, einer geschützten Website zur Verwaltung von Event-Teilnehmern und einer WebAPI als Datenqelle.</p>
                     <p>Das Formular ist reines HTML, die Website hingegen React in Verbindung mit next.js und die WebAPI eine dotnet 8 Anwendung.</p>
