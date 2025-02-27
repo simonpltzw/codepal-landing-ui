@@ -5,7 +5,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { CommandSearchDialog } from "@/components/command-search-dialog"
 
 export function SiteHeader() {
   return (

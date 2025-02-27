@@ -9,27 +9,25 @@ import { siteConfig } from "@/config/site";
 import { buttonVariants } from "./ui/button";
 import { Badge } from "./ui/badge";
 
-export function StringCompareApiProject() {
+export function TodoProject() {
     return (
         <Card className="py-0">
             <CardContent className="grid grid-cols-1 md:grid-cols-5 p-0" style={{minHeight: 250}}>
-                <div className="bg-purple-950 text-white col-span-1 md:col-span-2 h-full p-10 rounded-tl-lg rounded-tr-lg rounded-br-none md:rounded-tl-none md:rounded-br-lg flex justify-center items-center order-1 md:order-2">
+                <div className="bg-teal-950 text-white col-span-1 md:col-span-2 h-full p-10 rounded-tl-lg rounded-tr-lg rounded-br-none md:rounded-tl-none md:rounded-br-lg flex justify-center items-center order-1 md:order-2">
                     <div className="flex items-center">
-                        <Icons.swagger className="h-10 w-10"/>
+                        <Icons.shadcn className="w-10"/>
                         <Icons.x className="mx-4"/>
-                        <Icons.dotnet className="h-20 w-20" style={{margin: -10}}/>
+                        <Icons.auth0 className="w-10"/>
                     </div>
                 </div>
                 <div className="col-span-1 md:col-span-3 h-full p-6 md:p-10 flex flex-col gap-4 order-2 md:order-1">
-                    <h2 className="text-2xl font-bold">StringCompare API</h2>
+                    <h2 className="text-2xl font-bold">Todo App</h2>
                     <div>
-                        <Badge variant="secondary">inactive</Badge>
+                    <Badge className="bg-blue-600">in progress</Badge>
                     </div>
-                    <p>Diese WebAPI stellt Endpunkte bereit, mit denen sich Texte vergleichen lassen.</p>
+                    <p>Todo Anwendung mit handverlesenen Features, wie zum Beispiel kollaborativen Projekten und Routinen.</p>
                     <p>
-                        Grund für die Entwicklung war die Abhängigkeit zu kostenfreien Online-Stringvergleichs-Tools. Mit einem eigenen Tool kann sichergestellt werden, dass sensible Daten nicht bei Drittanbietern landen.
-                        <br/>
-                        Die API verwendet als Framework Microsoft.AspNetCore auf der dotnet 6 Runtime.
+                        Projektidee: Entwicklung einer größeren Anwendung mit shadcn/ui und next.js, sowie erstmalige Verwendung von Auth0 als Identity Provider.
                     </p>
                     <div className="flex flex-wrap gap-3 flex-col md:flex-row">
                         {/* <Link
@@ -45,11 +43,21 @@ export function StringCompareApiProject() {
                         <Link
                             target="_blank"
                             rel="noreferrer"
-                            href={siteConfig.links.github_project_stringcompare_api}
+                            href={siteConfig.links.github_project_todo_ui}
                             className={buttonVariants({ variant: "outline" })}
                             >
                             <Icons.gitHub/>
-                            <p className="ms-2">GitHub</p>
+                            <p className="ms-2">GitHub UI</p>
+                        </Link>
+
+                        <Link
+                            target="_blank"
+                            rel="noreferrer"
+                            href={siteConfig.links.github_project_todo_api}
+                            className={buttonVariants({ variant: "outline" })}
+                            >
+                            <Icons.gitHub/>
+                            <p className="ms-2">GitHub API</p>
                         </Link>
                     </div>
                 </div>
